@@ -1,0 +1,15 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-compact-display');
+
+main, body {
+    background-color: transparent;
+    font-family: 'SF Compact Display', sans-serif;
+}
+
+label, input, button, p, span, select {
+    font-size: 3em;
+}
+
+.selected {
+    color: goldenrod;
+}

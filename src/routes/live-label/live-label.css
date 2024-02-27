@@ -1,0 +1,37 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-compact-display');
+@import url('https://fonts.cdnfonts.com/css/muller-next-expanded-trial'); 
+
+main,
+body {
+    width: 3840px;
+    height: 2160px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+div {
+    display: flex;
+    margin: 32px;
+}
+
+p {
+    margin: 8px;
+    font-size: 44px;
+    border-radius: 16px;
+}
+
+#live {
+    padding: 10px 20px;
+    background-color: #ED1C24;
+    font-family: 'SF Compact Display', sans-serif;
+}
+
+#code {
+    padding: 12px 20px 8px 20px;
+    background-color: #0066B3;
+    font-family: 'Muller Next Wide Trial', sans-serif;
+    font-stretch: expanded;
+}

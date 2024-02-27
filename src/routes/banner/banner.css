@@ -1,0 +1,88 @@
+
+@import url('https://fonts.cdnfonts.com/css/sf-compact-display');
+@import url('https://fonts.cdnfonts.com/css/han-solo');
+
+main, body {
+    width: 3840px;
+    height: 2160px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9)
+}
+
+main {
+    position: relative;
+}
+
+h1, h2, h3 {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: inherit;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 128px;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Han Solo Expanded', sans-serif;
+    font-size: 100px;
+    font-weight: 200;
+    font-stretch: 200%;
+}
+
+h3 {
+    padding: 0;
+    font-family: 'SF Compact Display', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+#topLeft {
+    text-align: left;
+    left: 104px;
+    bottom: 198px;
+}
+
+#bottomLeft {
+    margin: 0 0 0 2px;
+    text-align: left;
+    left: 104px;
+    bottom: 130px;
+}
+
+#centerLeft {
+    text-align: right;
+    right: 2032px;
+    bottom: 224px;
+}
+
+#topRight {
+    text-align: right;
+    right: 104px;
+    bottom: 198px;
+}
+
+#bottomRight {
+    margin: 0 2px 0 0;
+    text-align: right;
+    right: 104px;
+    bottom: 130px;
+}
+
+#centerRight {
+    text-align: left;
+    left: 2032px;
+    bottom: 224px;
+}
+
+img {
+    z-index: inherit;
+}
