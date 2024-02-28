@@ -13,24 +13,24 @@ interface Banner {
 let banner = {
     dataInternal: {
         topLeft: 'Awaiting Data...',
-        bottomLeft: 'Made by Jining Liu',
+        bottomLeft: 'An Open Source Project from Jining Liu & Contributors',
         centerLeft: '',
         centerRight: '',
         topRight: 'Westwood Robotics',
         bottomRight: 'FTC 20240 Slingshot',
     } as Banner,
-    dataListener: function(val: Banner) {},
+    dataListener: function (val: Banner) { },
     set data(val: Banner) {
-      this.dataInternal = val;
-      this.dataListener(val);
+        this.dataInternal = val;
+        this.dataListener(val);
     },
     get data() {
-      return this.dataInternal;
+        return this.dataInternal;
     },
-    registerListener: function(listener: (val: Banner) => void) {
-      this.dataListener = listener;
+    registerListener: function (listener: (val: Banner) => void) {
+        this.dataListener = listener;
     }
-  }
+}
 
 const server = Bun.serve({
     port: 20240,
@@ -48,7 +48,7 @@ const server = Bun.serve({
         open(ws) {
             ws.subscribe("banner");
             ws.send(JSON.stringify(banner.data));
-            banner.registerListener(function(val: Banner) {
+            banner.registerListener(function (val: Banner) {
                 console.log("banner changed to:", val);
                 server.publish("banner", JSON.stringify(val));
             });

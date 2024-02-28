@@ -198,7 +198,8 @@
                     (event.data as string) !=
                     JSON.stringify({
                         topLeft: "Awaiting Data...",
-                        bottomLeft: "Made by Jining Liu",
+                        bottomLeft:
+                            "An Open Source Project from Jining Liu & Contributors",
                         centerLeft: "",
                         centerRight: "",
                         topRight: "Westwood Robotics",
